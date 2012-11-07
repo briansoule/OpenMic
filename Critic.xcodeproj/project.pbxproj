@@ -24,6 +24,13 @@
 		27A5C7BF16486672007D5C51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A5C79716486670007D5C51 /* Foundation.framework */; };
 		27A5C7C716486672007D5C51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27A5C7C516486672007D5C51 /* InfoPlist.strings */; };
 		27A5C7CA16486672007D5C51 /* CriticTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A5C7C916486672007D5C51 /* CriticTests.m */; };
+		27A5C7D516486855007D5C51 /* SubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A5C7D416486855007D5C51 /* SubmitViewController.m */; };
+		27A5C7D816486ACB007D5C51 /* ScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A5C7D716486ACB007D5C51 /* ScoresViewController.m */; };
+		27BBCACF1649608C005AC4FE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BBCACE1649608C005AC4FE /* AVFoundation.framework */; };
+		27BBCAD116496F16005AC4FE /* Open-Mic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 27BBCAD016496F16005AC4FE /* Open-Mic.jpeg */; };
+		27BBCAD316497289005AC4FE /* submit.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BBCAD216497289005AC4FE /* submit.png */; };
+		27BBCAD51649764C005AC4FE /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BBCAD41649764C005AC4FE /* Icon@2x.png */; };
+		27BBCAD71649CBEC005AC4FE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BBCAD61649CBEC005AC4FE /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +67,15 @@
 		27A5C7C616486672007D5C51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27A5C7C816486672007D5C51 /* CriticTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CriticTests.h; sourceTree = "<group>"; };
 		27A5C7C916486672007D5C51 /* CriticTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CriticTests.m; sourceTree = "<group>"; };
+		27A5C7D316486855007D5C51 /* SubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitViewController.h; sourceTree = "<group>"; };
+		27A5C7D416486855007D5C51 /* SubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitViewController.m; sourceTree = "<group>"; };
+		27A5C7D616486ACB007D5C51 /* ScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoresViewController.h; sourceTree = "<group>"; };
+		27A5C7D716486ACB007D5C51 /* ScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoresViewController.m; sourceTree = "<group>"; };
+		27BBCACE1649608C005AC4FE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		27BBCAD016496F16005AC4FE /* Open-Mic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Open-Mic.jpeg"; sourceTree = "<group>"; };
+		27BBCAD216497289005AC4FE /* submit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = submit.png; sourceTree = "<group>"; };
+		27BBCAD41649764C005AC4FE /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		27BBCAD61649CBEC005AC4FE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27BBCACF1649608C005AC4FE /* AVFoundation.framework in Frameworks */,
 				27A5C79616486670007D5C51 /* UIKit.framework in Frameworks */,
 				27A5C79816486670007D5C51 /* Foundation.framework in Frameworks */,
 				27A5C79A16486670007D5C51 /* CoreGraphics.framework in Frameworks */,
@@ -89,6 +106,7 @@
 		27A5C78616486670007D5C51 = {
 			isa = PBXGroup;
 			children = (
+				27BBCACE1649608C005AC4FE /* AVFoundation.framework */,
 				27A5C79B16486670007D5C51 /* Critic */,
 				27A5C7C216486672007D5C51 /* CriticTests */,
 				27A5C79416486670007D5C51 /* Frameworks */,
@@ -119,10 +137,14 @@
 		27A5C79B16486670007D5C51 /* Critic */ = {
 			isa = PBXGroup;
 			children = (
-				27A5C7A416486671007D5C51 /* AppDelegate.h */,
-				27A5C7A516486671007D5C51 /* AppDelegate.m */,
 				27A5C7AD16486672007D5C51 /* MainStoryboard_iPhone.storyboard */,
 				27A5C7B016486672007D5C51 /* MainStoryboard_iPad.storyboard */,
+				27A5C7A416486671007D5C51 /* AppDelegate.h */,
+				27A5C7A516486671007D5C51 /* AppDelegate.m */,
+				27A5C7D316486855007D5C51 /* SubmitViewController.h */,
+				27A5C7D416486855007D5C51 /* SubmitViewController.m */,
+				27A5C7D616486ACB007D5C51 /* ScoresViewController.h */,
+				27A5C7D716486ACB007D5C51 /* ScoresViewController.m */,
 				27A5C7B316486672007D5C51 /* ViewController.h */,
 				27A5C7B416486672007D5C51 /* ViewController.m */,
 				27A5C79C16486671007D5C51 /* Supporting Files */,
@@ -133,6 +155,10 @@
 		27A5C79C16486671007D5C51 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27BBCAD61649CBEC005AC4FE /* Icon.png */,
+				27BBCAD41649764C005AC4FE /* Icon@2x.png */,
+				27BBCAD216497289005AC4FE /* submit.png */,
+				27BBCAD016496F16005AC4FE /* Open-Mic.jpeg */,
 				27A5C79D16486671007D5C51 /* Critic-Info.plist */,
 				27A5C79E16486671007D5C51 /* InfoPlist.strings */,
 				27A5C7A116486671007D5C51 /* main.m */,
@@ -240,6 +266,10 @@
 				27A5C7AC16486671007D5C51 /* Default-568h@2x.png in Resources */,
 				27A5C7AF16486672007D5C51 /* MainStoryboard_iPhone.storyboard in Resources */,
 				27A5C7B216486672007D5C51 /* MainStoryboard_iPad.storyboard in Resources */,
+				27BBCAD116496F16005AC4FE /* Open-Mic.jpeg in Resources */,
+				27BBCAD316497289005AC4FE /* submit.png in Resources */,
+				27BBCAD51649764C005AC4FE /* Icon@2x.png in Resources */,
+				27BBCAD71649CBEC005AC4FE /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +307,8 @@
 				27A5C7A216486671007D5C51 /* main.m in Sources */,
 				27A5C7A616486671007D5C51 /* AppDelegate.m in Sources */,
 				27A5C7B516486672007D5C51 /* ViewController.m in Sources */,
+				27A5C7D516486855007D5C51 /* SubmitViewController.m in Sources */,
+				27A5C7D816486ACB007D5C51 /* ScoresViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +375,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: brian Soule (6CMRC4M897)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: brian Soule (6CMRC4M897)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -358,6 +391,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "85423473-99CA-488D-BBF5-95C9F9B85119";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "85423473-99CA-488D-BBF5-95C9F9B85119";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -372,7 +407,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: brian Soule (6CMRC4M897)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: brian Soule (6CMRC4M897)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -380,6 +416,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "85423473-99CA-488D-BBF5-95C9F9B85119";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "85423473-99CA-488D-BBF5-95C9F9B85119";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -461,6 +499,7 @@
 				27A5C7CF16486672007D5C51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27A5C7D016486672007D5C51 /* Build configuration list for PBXNativeTarget "CriticTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +508,7 @@
 				27A5C7D216486672007D5C51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
